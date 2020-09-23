@@ -1,0 +1,12 @@
+C:\Users\mukarram.javaid\Desktop\User\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+C:\Users\mukarram.javaid\Desktop\User\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Users\mukarram.javaid\Desktop\User\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\mukarram.javaid\Desktop\User\Repository\bin\Debug\netcoreapp2.1\Inferastructure.dll
+C:\Users\mukarram.javaid\Desktop\User\Repository\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.pdb

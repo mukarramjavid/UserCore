@@ -1,0 +1,264 @@
+﻿
+@{
+    ViewData["Title"] = "UsersList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<!-- Trigger the modal with a button -->
+<button id="btnCreate" class="btn btn-info">Insert New User</button>
+<hr />
+<div class="container">
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                @*<th>ID</th>*@
+                <th>UserName</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form id="formData" enctype="multipart/form-data">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">User Detail</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                @if (TempData["IsSuccess"] != null)
+                                {
+                                    <div class="">
+                                        <div class="col-md-offset-5 col-md-10 ">
+                                            <label class="label label-success">@TempData["IsSuccess"]</label>
+                                        </div>
+                                    </div>
+                                }
+                                @if (TempData["IsFail"] != null)
+                                {
+                                    <div class="">
+                                        <div class="col-md-offset-5 col-md-10 ">
+                                            <label class="label label-danger">@TempData["IsFail"]</label>
+                                        </div>
+                                    </div>
+                                }
+
+                                <input type="hidden" id="userId" name="user_id" class="" />
+                                <div class="form-group">
+                                    <label class="control-label">UserName</label>
+                                    <input type="text" id="uname" name="user_name" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Email</label>
+                                    <input type="email" id="email" name="user_email" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Password</label>
+                                    <input type="password" id="pwd" name="user_pwd" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Phone</label>
+                                    <input type="number" id="phone" name="user_phone" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Age</label>
+                                    <input type="number" id="age" name="user_age" class="form-control" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="control-label">Address</label>
+                                    <input type="text" id="cityName" name="cityName" class="form-control" />
+                                </div>
+
+                                @*<div class="form-group">
+                                        <input type="button" id="btnSubmitt" class="btn btn-primary" value="Create" />
+                                    </div>*@
+                            </div>
+                            @* IMG *@
+                            <div class="col-md-4">
+                                <div class="user_profile_img">
+
+                                    <input name="CoverPic" type="file" class="hidden" id="imgInput" accept="image/*" />
+                                    <img src="~/images/img/programmer.gif" id="blah" name="ImagePathUvm">
+                                    @*<input type="text" name="file" />*@
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" id="btnUpdate">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        loadData();
+    });
+    function loadData() {
+        $.ajax({
+            url: "/jQueryCRUD/GetUsersLists",
+            type: "GET",
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            success: function (result) {
+                var html = '';
+                console.log("result=> ", result)
+                $.each(result, function (key, item) {
+                    html += '<tr>';
+                    //html += '<td>' + item.user_id + '</td>';
+                    html += '<td>' + item.user_name + '</td>';
+                    html += '<td>' + item.user_email + '</td>';
+                    html += '<td>' + item.user_pwd + '</td>';
+                    html += '<td>' + item.user_age + '</td>';
+                    html += '<td>' + item.user_phone + '</td>';
+                    html += '<td>' + item.cityName + '</td>';
+                    html += '<td><a href="#" onclick="RcrdGetbyID(' + item.user_id + ')">Edit</a> | <a href="/jQueryCRUD/UsersList" onclick="DeleleRecord(' + item.user_id + ')">Delete</a></td>';
+                    html += '</tr>';
+                });
+                $('.tbody').html(html);
+            },
+            error: function (errormessage) {
+                alert(errormessage.responseText);
+            }
+        });
+    }
+    function DeleleRecord(id) {
+        if (confirm("Are you sure you want to delete this rcrd??")) {
+            $.ajax({
+                url: "/jQueryCRUD/DeleteRecordbyID/" + id,
+                type: 'get',
+                contentType: "application/json;charset=UTF-8",
+                dataType: "json",
+                success: function (data) {
+                    console.log("Data Success=> ", data)
+                    loadData();
+                },
+                error: function (err) {
+                    console.error("Error=> ", err.responseText)
+                }
+            })
+        }
+    }
+
+    function RcrdGetbyID(id) {
+        $.ajax({
+            url: '/jQueryCRUD/GetbyId/' + id,
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            type: 'get',
+            processData: false,
+            success: function (result) {
+                console.log("Edit Rsult=> ", result)
+                $("#userId").val(result.user_id);
+                $("#uname").val(result.user_name);
+                $("#email").val(result.user_email);
+                $("#pwd").val(result.user_pwd);
+                $("#age").val(result.user_age);
+                $("#phone").val(result.user_phone);
+                $("#age").val(result.user_age);
+                $("#cityName").val(result.cityName);
+                var src = result.ImagePathUvm;
+                console.log("Src=> ", src);
+                $("#blah").attr('src', src)
+                $("#myModal").modal('show');
+
+
+            },
+            error: function (err) {
+                console.error("Error=> ", err.responseText)
+            }
+        })
+        //return false;
+    }
+    $("#btnUpdate").click(function () {
+        var uname = $("#uname").val();
+        var email = $("#email").val();
+        var pwd = $("#pwd").val();
+        var age = $("#age").val();
+        var city = $("#cityName").val();
+        var phone = $("#phone").val();
+        var file = $("#imgInput").get(0).files;
+        var userId = $("#userId").val();
+        var path = $("#blah").attr('src')
+        console.log(userId)
+        console.log(path)
+        //var data1 = {
+        // userId: $("#userId").val(),
+        // uname : $("#uname").val(),
+        // email : $("#email").val(),
+        // pwd : $("#pwd").val(),
+        // age : $("#age").val(),
+        // city : $("#cityName").val(),
+        // phone : $("#phone").val(),
+        // file : $("#imgInput").get(0).files[0],
+        //}
+        //declare formData obj
+        var data = new FormData;
+        data.append("CoverPic", file[0])
+        data.append("user_name", uname)
+        data.append("user_pwd", pwd)
+        data.append("user_email", email)
+        data.append("user_phone", phone)
+        data.append("user_age", age)
+        data.append("cityName", city)
+        data.append("user_id", userId)
+        data.append("ImagePathUvm", path)
+
+
+        //console.log("After CLicking=> ", data.userId)
+
+        $.ajax({
+            url: "/jQueryCRUD/GetbyId/" + userId,
+            type: "POST",
+            dataType: "json",
+            data: data,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                console.log("Success=> ", data)
+                loadData()
+                $('#myModal').modal('hide');
+            },
+            error: function (err) {
+                console.error("Error=> ", err.responseText)
+            }
+        }).done(function (result) {
+            console.log("Done=> ", result)
+        }).fail(function (fail) {
+
+            console.log("Fail=> ", fail)
+        })
+    })
+    //Redirect to Create Page
+
+    $("#btnCreate").click(function (event) {
+        event.preventDefault();
+        window.location.href = "/jQueryCRUD/Create"
+    })
+
+</script>

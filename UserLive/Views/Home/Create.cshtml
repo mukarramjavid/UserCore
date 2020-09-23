@@ -1,0 +1,152 @@
+﻿@model UserLive.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .user_profile_img {
+        border: 1px solid #ededed;
+        border-radius: 3px;
+    }
+
+        .user_profile_img #UserImage {
+            height: 200px;
+            width: 100%;
+            cursor: pointer;
+        }
+</style>
+<h2>Create</h2>
+
+<h4>Users</h4>
+<hr />
+<div class="row">
+    <form asp-action="Create" enctype="multipart/form-data">
+        <div class="col-md-6">
+            @if (TempData["IsSuccess"] != null)
+            {
+                <div class="">
+                    <div class="col-md-offset-5 col-md-10 ">
+                        <label class="label label-success">@TempData["IsSuccess"]</label>
+                    </div>
+                </div>
+            }
+            @if (TempData["IsFail"] != null)
+            {
+                <div class="">
+                    <div class="col-md-offset-5 col-md-10 ">
+                        <label class="label label-danger">@TempData["IsFail"]</label>
+                    </div>
+                </div>
+            }
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            @*<div class="form-group">
+            <label asp-for="user_id" class="control-label"></label>
+            <input asp-for="user_id" class="form-control" />
+            <span asp-validation-for="user_id" class="text-danger"></span>
+        </div>*@
+            <div class="form-group">
+                <label asp-for="user_name" class="control-label"></label>
+                <input asp-for="user_name" class="form-control" />
+                <span asp-validation-for="user_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="user_email" class="control-label"></label>
+                <input asp-for="user_email" class="form-control" />
+                <span asp-validation-for="user_email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="user_pwd" type="password" class="control-label"></label>
+                <input asp-for="user_pwd" class="form-control" />
+                <span asp-validation-for="user_pwd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="user_phone" class="control-label"></label>
+                <input asp-for="user_phone" class="form-control" />
+                <span asp-validation-for="user_phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="user_age" class="control-label"></label>
+                <input asp-for="user_age" class="form-control" />
+                <span asp-validation-for="user_age" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="cityName" class="control-label"></label>
+                <input asp-for="cityName" class="form-control" />
+                <span asp-validation-for="cityName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+        @* IMG *@
+        <div class="col-md-4">
+            <div class="user_profile_img">
+
+                <input asp-for="CoverPic" class="hidden" id="BrowseImage" accept="image/*"  />
+                <img src='@Url.Content(Model.ImagePathUvm)' class="img-responsive" id="UserImage" />
+                <div class="upload_photo">
+                    <img src="~/images/search-512.png" id="searchImg" class="img-responsive" />
+                </div>
+                <p class="img-desc text-center">Image allowed only 200 x 200 </p>
+                <div class="remove_photo">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+    
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    //$(document).ready(function () {
+    //    //Upload & Browse picture
+    //    $("#UserImage,.upload_photo").click(function () {
+    //        $("#BrowseImage").trigger('click');
+    //        //alert('click')
+    //    });
+    //    //Select & upload Image
+    //    $("#BrowseImage").change(function () {
+    //        var File = this.files;
+    //        if (File && File[0]) {
+    //            var fileReader = new FileReader();
+    //            fileReader.readAsDataURL(File[0]);
+    //            fileReader.onload = function (img) {
+    //                //Load img and control dimensions
+    //                var image = new Image();
+    //                image.src = img.target.result;
+    //                image.onload = function () {
+    //                    //var width = this.width;
+    //                    //var height = this.height;
+    //                    var type = File[0].type;
+    //                    if ((type == "image/jpg" || type == "image/png" || type == "image/jpeg")) {
+    //                        $("#UserImage").attr('src', img.target.result);
+    //                        //$(".img-desc").css("color", "black");
+    //                    }
+    //                    else {
+    //                        alert("Only specfied dimensions are allowed. 178 x 156");
+    //                        //$(".img-desc").css("color", "red");
+    //                    }
+    //                    //alert("width: " + width + "height: " + height); 
+    //                }
+    //                //$("#UserImage").attr('src', img.target.result);
+    //            }
+    //        }
+    //    });
+    //    $(".remove_photo").click(function () {
+    //        $("#UserImage").attr('src', "/images/no_image_available_male.png");
+    //        $(".ImagePath").val("/images/no_image_available_male.png");
+    //    });
+    //});
+</script>

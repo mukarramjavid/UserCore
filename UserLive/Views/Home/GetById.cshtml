@@ -1,0 +1,86 @@
+﻿@model UserLive.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "GetById";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>GetById</h2>
+
+<h4>Users</h4>
+<hr />
+<div class="row">
+    <form asp-action="GetById" enctype="multipart/form-data">
+        <div class="col-md-6">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                @*<label asp-for="user_id" class="control-label"></label>*@
+                <input asp-for="user_id" type="hidden" class="form-control" />
+                <input asp-for="ImagePathUvm" type="hidden"/>
+                @*<span asp-validation-for="user_id" class="text-danger"></span>*@
+            </div>
+            <div class="form-group">
+                <label asp-for="user_name" class="control-label"></label>
+                <input asp-for="user_name" class="form-control" />
+                <span asp-validation-for="user_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="user_email" class="control-label"></label>
+                <input asp-for="user_email" class="form-control" />
+                <span asp-validation-for="user_email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="user_pwd" class="control-label"></label>
+                <input asp-for="user_pwd" class="form-control" />
+                <span asp-validation-for="user_pwd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="user_phone" class="control-label"></label>
+                <input asp-for="user_phone" class="form-control" />
+                <span asp-validation-for="user_phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="user_age" class="control-label"></label>
+                <input asp-for="user_age" class="form-control" />
+                <span asp-validation-for="user_age" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="cityName" class="control-label"></label>
+                <input asp-for="cityName" class="form-control" />
+                <span asp-validation-for="cityName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Update" class="btn btn-success" />
+            </div>
+        </div>
+        @* IMG *@
+        <div class="col-md-4">
+            <div class="user_profile_img">
+
+                <input asp-for="CoverPic" class="hidden" id="BrowseImage" accept="image/*" />
+                <img src="@Url.Content(Model.ImagePathUvm)" class="img-responsive" id="UserImage" />
+                <div class="upload_photo">
+                    <img src="~/images/search-512.png" id="searchImg" class="img-responsive" />
+                </div>
+                <p class="img-desc text-center">Image allowed only 200 x 200 </p>
+                <div class="remove_photo">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+    
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

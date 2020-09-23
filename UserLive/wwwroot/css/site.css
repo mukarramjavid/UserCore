@@ -1,0 +1,113 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.user_profile_img {
+    /*border: 1px solid #ededed;
+    border-radius:3px;*/
+}
+
+    .user_profile_img img {
+        height: 300px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .user_profile_img:hover .upload_photo {
+        transform: scaleY(1);
+    }
+
+    .user_profile_img .upload_photo {
+        background-color: #242424;
+        opacity: 0.4;
+        width: 92.3%;
+        height: 50px;
+        position: absolute;
+        left: 15px;
+        bottom: 30px;
+        cursor: pointer;
+        transform: scaleY(0);
+        transition: 0.5s;
+        transform-origin: bottom;
+    }
+
+        .user_profile_img .upload_photo:before {
+            content: 'Change Photo';
+            position: absolute;
+            color: #fff;
+            bottom: 10px;
+            left: 110px;
+            opacity: 1;
+            font-size: 24px;
+        }
+
+        .user_profile_img .upload_photo img {
+            height: 30px;
+            width: 30px;
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            left: 70px;
+        }
+
+    .user_profile_img .remove_photo span {
+        color: red;
+    }
+
+    .user_profile_img .remove_photo {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        border: 2px solid #ddd;
+        padding: 10px;
+        cursor: pointer;
+        transform: scaleY(0);
+        transition: 0.3s;
+        transform-origin: top;
+    }
+
+        .user_profile_img .remove_photo glyphion-remove {
+            color: #cbcbcb;
+        }
+
+        .user_profile_img .remove_photo:hover glyphion-remove {
+            color: #808080;
+        }
+
+    .user_profile_img:hover .remove_photo {
+        transform: scaleY(1);
+    }

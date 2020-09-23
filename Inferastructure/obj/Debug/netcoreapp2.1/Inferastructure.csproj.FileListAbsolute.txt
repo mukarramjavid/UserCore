@@ -1,0 +1,9 @@
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.deps.json
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.dll
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.csprojAssemblyReference.cache
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.AssemblyInfoInputs.cache
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.AssemblyInfo.cs
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.csproj.CoreCompileInputs.cache
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.dll
+C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.pdb

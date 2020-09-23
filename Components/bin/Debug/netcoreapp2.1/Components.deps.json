@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "Components/1.0.0": {
+        "dependencies": {
+          "Inferastructure": "1.0.0"
+        },
+        "runtime": {
+          "Components.dll": {}
+        }
+      },
+      "Inferastructure/1.0.0": {
+        "runtime": {
+          "Inferastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Components/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Inferastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
