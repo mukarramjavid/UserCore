@@ -1,0 +1,5 @@
+E:\Angular_Projects\_coreUSer - Copy\UserLive_console\bin\Debug\netcoreapp3.1\UserLive_console.exe
+E:\Angular_Projects\_coreUSer - Copy\UserLive_console\obj\Debug\netcoreapp3.1\UserLive_console.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive_console\obj\Debug\netcoreapp3.1\UserLive_console.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive_console\obj\Debug\netcoreapp3.1\UserLive_console.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive_console\obj\Debug\netcoreapp3.1\UserLive_console.csproj.CoreCompileInputs.cache

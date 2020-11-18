@@ -16,3 +16,39 @@ C:\Users\mukarram.javaid\Desktop\User\BussinessOperation\obj\Debug\netcoreapp2.1
 C:\Users\mukarram.javaid\Desktop\User\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.csproj.CopyComplete
 C:\Users\mukarram.javaid\Desktop\User\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.dll
 C:\Users\mukarram.javaid\Desktop\User\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.pdb
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\BussinessOperation.deps.json
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\BussinessOperation.dll
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\BussinessOperation.pdb
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\Components.dll
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\Repository.dll
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\Services.dll
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\Components.pdb
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\Services.pdb
+E:\Angular_Projects\_coreUSer\BussinessOperation\bin\Debug\netcoreapp2.1\Repository.pdb
+E:\Angular_Projects\_coreUSer\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.csproj.CoreCompileInputs.cache
+E:\Angular_Projects\_coreUSer\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.csproj.CopyComplete
+E:\Angular_Projects\_coreUSer\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.dll
+E:\Angular_Projects\_coreUSer\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.pdb
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\BussinessOperation.deps.json
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\BussinessOperation.dll
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\BussinessOperation.pdb
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\Components.dll
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\Repository.dll
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\Services.dll
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\Components.pdb
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\Services.pdb
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\bin\Debug\netcoreapp2.1\Repository.pdb
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.csproj.CoreCompileInputs.cache
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.csproj.CopyComplete
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.dll
+E:\Angular_Projects\_coreUSer - Copy\BussinessOperation\obj\Debug\netcoreapp2.1\BussinessOperation.pdb

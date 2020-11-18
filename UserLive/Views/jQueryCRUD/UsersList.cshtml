@@ -118,6 +118,7 @@
 <script>
     $(document).ready(function () {
         loadData();
+
     });
     function loadData() {
         $.ajax({
@@ -148,6 +149,7 @@
         });
     }
     function DeleleRecord(id) {
+        alert("Id=> ",id)
         if (confirm("Are you sure you want to delete this rcrd??")) {
             $.ajax({
                 url: "/jQueryCRUD/DeleteRecordbyID/" + id,

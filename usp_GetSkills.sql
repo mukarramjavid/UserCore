@@ -1,0 +1,5 @@
+CREATE PROC usp_GetSkills
+AS
+BEGIN
+	SELECT * FROM tbl_Skills
+END

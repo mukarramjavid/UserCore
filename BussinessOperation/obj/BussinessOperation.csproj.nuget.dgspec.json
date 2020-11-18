@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mukarram.javaid\\Desktop\\User\\BussinessOperation\\BussinessOperation.csproj": {}
+    "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mukarram.javaid\\Desktop\\User\\BussinessOperation\\BussinessOperation.csproj": {
+    "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mukarram.javaid\\Desktop\\User\\BussinessOperation\\BussinessOperation.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj",
         "projectName": "BussinessOperation",
-        "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\BussinessOperation\\BussinessOperation.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\BussinessOperation\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,14 +30,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\mukarram.javaid\\Desktop\\User\\Components\\Components.csproj": {
-                "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Components\\Components.csproj"
+              "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj"
               },
-              "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
               },
-              "C:\\Users\\mukarram.javaid\\Desktop\\User\\Services\\Services.csproj": {
-                "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Services\\Services.csproj"
+              "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "C:\\Users\\mukarram.javaid\\Desktop\\User\\Components\\Components.csproj": {
+    "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Components\\Components.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj",
         "projectName": "Components",
-        "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Components\\Components.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Components\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -98,8 +98,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj": {
+    "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj",
         "projectName": "Inferastructure",
-        "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -171,6 +171,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -192,14 +200,14 @@
         }
       }
     },
-    "C:\\Users\\mukarram.javaid\\Desktop\\User\\Repository\\Repository.csproj": {
+    "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Repository\\Repository.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Repository\\Repository.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Repository\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -218,8 +226,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
               }
             }
           }
@@ -266,14 +274,14 @@
         }
       }
     },
-    "C:\\Users\\mukarram.javaid\\Desktop\\User\\Services\\Services.csproj": {
+    "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Services\\Services.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Services\\Services.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Services\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -292,14 +300,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\mukarram.javaid\\Desktop\\User\\Components\\Components.csproj": {
-                "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Components\\Components.csproj"
+              "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj"
               },
-              "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
               },
-              "C:\\Users\\mukarram.javaid\\Desktop\\User\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\mukarram.javaid\\Desktop\\User\\Repository\\Repository.csproj"
+              "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj"
               }
             }
           }

@@ -1,4 +1,5 @@
-﻿using Inferastructure.DataModels;
+﻿using demo_master.Models;
+using Inferastructure.DataModels;
 using Repository.Interfaces;
 using Repository.Providers;
 using Services.Interfaces;
@@ -54,7 +55,7 @@ namespace Services.Implementation
         public Users GetById(int id)
         {
             _unitOfWork.Open();
-            Users obj = _userRepository.GetbyId(id);
+            Users obj = _userRepository.GetMasterById(id);
             _unitOfWork.Close();
             return obj;
         }
@@ -107,6 +108,51 @@ namespace Services.Implementation
             _unitOfWork.Open();
             _userRepository.DeleteAddress(id);
             _unitOfWork.Close();
+        }
+
+        public void InsertMaster(UserModel user)
+        {
+            _unitOfWork.Open();
+            _userRepository.InsertMaster(user);
+            _unitOfWork.Close();
+        }
+
+        public List<UserModel> GetMasterUsers()
+        {
+            List<UserModel> objList = new List<UserModel>();
+            _unitOfWork.Open();
+
+            objList = _userRepository.GetMasterUsers();
+
+            _unitOfWork.Close();
+            return objList;
+            
+        }
+
+        public void DeleteMasterRecord(int id)
+        {
+            _unitOfWork.Open();
+            _userRepository.DeleteMasterRecord(id);
+            _unitOfWork.Close();
+        }
+
+        public UserModel GetMasterById(int id)
+        {
+            _unitOfWork.Open();
+            UserModel obj = _userRepository.GetUserMasterById(id);
+            //UserModel obj = _userRepository.GetMasterById(id);
+            _unitOfWork.Close();
+            return obj;
+        }
+
+        public int UpdateMasterUser(int id, UserModel user)
+        {
+            int local_id = 0;
+
+            _unitOfWork.Open();
+            local_id = _userRepository.UpdateMasterUser(id, user);
+            _unitOfWork.Close();
+            return local_id;
         }
     }
 }

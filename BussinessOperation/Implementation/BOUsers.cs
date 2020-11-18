@@ -1,4 +1,5 @@
 ﻿using BussinessOperation.Interfaces;
+using demo_master.Models;
 using Inferastructure.DataModels;
 using Services.Interfaces;
 using System;
@@ -29,6 +30,11 @@ namespace BussinessOperation.Implementation
             _userService.DeleteAddress(id);
         }
 
+        public void DeleteMasterRecord(int id)
+        {
+            _userService.DeleteMasterRecord(id);
+        }
+
         public void DeleteRecord(int id)
         {
             _userService.DeleteRecord(id);
@@ -46,11 +52,35 @@ namespace BussinessOperation.Implementation
             return user;
         }
 
+        public UserModel GetMasterById(int id)
+        {
+            UserModel user = null;
+            user = _userService.GetMasterById(id);
+            return user;
+        }
+
+        public List<UserModel> GetMasterUsers()
+        {
+            List<UserModel> objUserList = new List<UserModel>();
+            objUserList = _userService.GetMasterUsers();
+            return objUserList;
+        }
+
         public List<Users> GetUsers()
         {
             List<Users> objUserList = new List<Users>();
             objUserList=_userService.GetUsers();
             return objUserList;
+        }
+
+        public void InsertMaster(UserModel user)
+        {
+            _userService.InsertMaster(user);
+        }
+
+        public int Register()
+        {
+            throw new NotImplementedException();
         }
 
         public int SaveAddress(UserAddress userAd)
@@ -61,6 +91,13 @@ namespace BussinessOperation.Implementation
         public int UpdateAddress(int rcrd, UserAddress objAd)
         {
             return _userService.UpdateAddress(rcrd, objAd);
+        }
+
+        public int UpdateMasterUser(int id, UserModel user)
+        {
+            int local_id = 0;
+            local_id = _userService.UpdateMasterUser(id, user);
+            return local_id;
         }
 
         public int UpdateUser(int id, Users user)

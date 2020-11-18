@@ -7,3 +7,21 @@ C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\In
 C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.csproj.CoreCompileInputs.cache
 C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.dll
 C:\Users\mukarram.javaid\Desktop\User\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.deps.json
+E:\Angular_Projects\_coreUSer\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.csproj.CoreCompileInputs.cache
+E:\Angular_Projects\_coreUSer\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.deps.json
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer - Copy\Inferastructure\obj\Debug\netcoreapp2.1\Inferastructure.csproj.CoreCompileInputs.cache

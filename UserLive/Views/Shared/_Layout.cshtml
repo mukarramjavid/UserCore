@@ -30,12 +30,12 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="UsersList">Users List</a></li>
-                    <li><a asp-area="" asp-controller="jQueryCRUD" asp-action="UsersList" id="btnLoad" >Users List 2</a></li>
-                    @*<li><a asp-area="" asp-controller="jQueryCRUD" asp-action="Create">Create User 2</a></li>*@
+                    <li id="_home"><a asp-area=""  asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li id="_about"><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li id="_contact"><a asp-area=""id="_contact" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li  id="_userlist"><a asp-area="" id="_userlist" asp-controller="Home" asp-action="UsersList">Users List</a></li>
+                    <li><a asp-area=""asp-controller="jQueryCRUD" asp-action="UsersList" id="btnLoad" >Users List 2</a></li>
+                    <li><a asp-area="" id="_insertmaster"asp-controller="NewUser" asp-action="InsertMaster">InsertMaster</a></li>
                 </ul>
             </div>
         </div>
@@ -75,3 +75,10 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+<script>
+    $("#_home").click(function () {
+        $(this).addClass("active")
+    })
+
+
+</script>

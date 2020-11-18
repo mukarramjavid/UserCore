@@ -52,3 +52,112 @@ C:\Users\mukarram.javaid\Desktop\User\UserLive\obj\Debug\netcoreapp2.1\Razor\Vie
 C:\Users\mukarram.javaid\Desktop\User\UserLive\obj\Debug\netcoreapp2.1\UserLive.csproj.CoreCompileInputs.cache
 C:\Users\mukarram.javaid\Desktop\User\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\_UsersDetails.cshtml.g.cs
 C:\Users\mukarram.javaid\Desktop\User\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\UsersList.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\appsettings.json
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\UserLive.deps.json
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\UserLive.runtimeconfig.json
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\UserLive.runtimeconfig.dev.json
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\UserLive.dll
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\UserLive.pdb
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\UserLive.Views.dll
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\UserLive.Views.pdb
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\BussinessOperation.dll
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Components.dll
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Repository.dll
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Services.dll
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\BussinessOperation.pdb
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Components.pdb
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Repository.pdb
+E:\Angular_Projects\_coreUSer\UserLive\bin\Debug\netcoreapp2.1\Services.pdb
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.csproj.CoreCompileInputs.cache
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorAssemblyInfo.cache
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorAssemblyInfo.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.TagHelpers.input.cache
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.TagHelpers.output.cache
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorCoreGenerate.cache
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\GetById.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\UsersList.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\Create.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\GetUsersList.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\UsersList.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\_UsersDetails.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ListView.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorTargetAssemblyInfo.cache
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorTargetAssemblyInfo.cs
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.Views.pdb
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.csproj.CopyComplete
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.dll
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.pdb
+E:\Angular_Projects\_coreUSer\UserLive\obj\Debug\netcoreapp2.1\UserLive.genruntimeconfig.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\appsettings.Development.json
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\appsettings.json
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\UserLive.deps.json
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\UserLive.runtimeconfig.json
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\UserLive.runtimeconfig.dev.json
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\UserLive.dll
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\UserLive.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\UserLive.Views.dll
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\UserLive.Views.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\BussinessOperation.dll
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Components.dll
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Repository.dll
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Services.dll
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\BussinessOperation.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Components.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Repository.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\bin\Debug\netcoreapp2.1\Services.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorAssemblyInfo.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorAssemblyInfo.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.TagHelpers.input.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.TagHelpers.output.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorCoreGenerate.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\Create.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\GetById.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Home\UsersList.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\Create.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\GetUsersList.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\UsersList.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\jQueryCRUD\_UsersDetails.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\NewUser\InsertMaster.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ListView.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorTargetAssemblyInfo.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.RazorTargetAssemblyInfo.cs
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.Views.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.csproj.CopyComplete
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.dll
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.pdb
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.genruntimeconfig.cache
+E:\Angular_Projects\_coreUSer - Copy\UserLive\obj\Debug\netcoreapp2.1\UserLive.csproj.CoreCompileInputs.cache

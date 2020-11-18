@@ -3,6 +3,10 @@
 
 //// Write your JavaScript code.
 $(document).ready(function () {
+    //GetIpAddress();
+
+
+
     //Upload & Browse picture
     $("#UserImage,.upload_photo").click(function () {
         $("#BrowseImage").trigger('click');
@@ -45,7 +49,6 @@ $(document).ready(function () {
     })
     $("#imgInput").change(function () {
         console.log("Changed")
-        debugger
         if (this.files && this.files[0]) {
             var reader = new FileReader();
 
@@ -58,5 +61,11 @@ $(document).ready(function () {
             console.log("reader=> ", reader)
         }
     })
-}
-);
+});
+
+//function GetIpAddress() {
+//    $.getJSON("https://api.ipify.org?format=json",
+//        function (data) {
+//            $("#_ip").html(data.ip);
+//        })
+//}

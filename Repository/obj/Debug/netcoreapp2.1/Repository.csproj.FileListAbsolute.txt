@@ -10,3 +10,27 @@ C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Reposit
 C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\Users\mukarram.javaid\Desktop\User\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+E:\Angular_Projects\_coreUSer\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+E:\Angular_Projects\_coreUSer\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+E:\Angular_Projects\_coreUSer\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+E:\Angular_Projects\_coreUSer\Repository\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer\Repository\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+E:\Angular_Projects\_coreUSer\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+E:\Angular_Projects\_coreUSer\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+E:\Angular_Projects\_coreUSer\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
+E:\Angular_Projects\_coreUSer - Copy\Repository\bin\Debug\netcoreapp2.1\Repository.deps.json
+E:\Angular_Projects\_coreUSer - Copy\Repository\bin\Debug\netcoreapp2.1\Repository.dll
+E:\Angular_Projects\_coreUSer - Copy\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
+E:\Angular_Projects\_coreUSer - Copy\Repository\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSer - Copy\Repository\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSer - Copy\Repository\obj\Debug\netcoreapp2.1\Repository.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSer - Copy\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSer - Copy\Repository\obj\Debug\netcoreapp2.1\Repository.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSer - Copy\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
+E:\Angular_Projects\_coreUSer - Copy\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
+E:\Angular_Projects\_coreUSer - Copy\Repository\obj\Debug\netcoreapp2.1\Repository.dll
+E:\Angular_Projects\_coreUSer - Copy\Repository\obj\Debug\netcoreapp2.1\Repository.pdb

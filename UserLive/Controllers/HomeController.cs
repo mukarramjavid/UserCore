@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using BussinessOperation.Interfaces;
@@ -10,8 +11,11 @@ using Inferastructure.DataModels;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Razor.Language;
+using Microsoft.Extensions.Logging;
 using UserLive.Models;
+using Wangkanai.Detection;
 
 namespace UserLive.Controllers
 {
@@ -20,20 +24,40 @@ namespace UserLive.Controllers
         public static string imgURL = "";
         private readonly IBOUsers _IBOUsers;
         private readonly IHostingEnvironment _HostEnvironment;
-        public HomeController(IBOUsers IBOUsers, IHostingEnvironment HostEnvironment)
+        private readonly IDetection _detection;
+        private readonly IActionContextAccessor _accessor;
+        private readonly ILogger _logger;
+
+        public HomeController(IBOUsers IBOUsers, IHostingEnvironment HostEnvironment, IDetection detection, IActionContextAccessor accessor, ILogger<HomeController> logger)
         {
             _IBOUsers = IBOUsers;
             _HostEnvironment = HostEnvironment;
+            _detection = detection;
+            _accessor = accessor;
+            _logger = logger;
         }
         public IActionResult Index()
         {
+            try
+            {
+            
+                var browser = _detection.Browser.Type.ToString();
+                var decive = _detection.Device.Type.ToString();
+                var crawlerType = _detection.UserAgent.ToString();
+                var ip = _accessor.ActionContext.HttpContext.Connection.RemoteIpAddress.ToString();
+                var dem = _accessor.ActionContext.HttpContext.Connection.RemotePort.ToString();
+            }
+            catch (Exception ex)
+            {
+                var exe = ex.Message;
+               
+            }
             return View();
         }
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            _logger.LogInformation("In About in Index Action");
             return View();
         }
 
