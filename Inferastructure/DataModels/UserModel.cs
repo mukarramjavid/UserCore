@@ -14,6 +14,7 @@ namespace demo_master.Models
         public string userEmail { set; get; }
         public string userPwd { set; get; }
         public string userPhone { set; get; }
+        public bool IsVerified { set; get; }
 
         //Country
         public int countryId { set; get; }

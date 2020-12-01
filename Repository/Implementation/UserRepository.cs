@@ -16,6 +16,21 @@ namespace Repository.Implementation
     {
         public IUnitOfWork UnitOfWork { get; set; }
 
+        public void AddDate(DateTime date)
+        {
+            try
+            {
+                string add_Date = "usp_Add_Date";
+                var param = new DynamicParameters();
+                param.Add("Date", date);
+                UnitOfWork.Connection.Query(add_Date, param, commandType: CommandType.StoredProcedure);
+            }
+            catch (Exception ex)
+            {
+                var e = ex.Message;
+            }
+        }
+
         public int Create(Users user)
         {
             int userID = 0;
@@ -34,7 +49,8 @@ namespace Repository.Implementation
 
                 userID = UnitOfWork.Connection.ExecuteScalar<int>(usp_Insert, parameters, commandType: CommandType.StoredProcedure);
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
                 Console.WriteLine("Exception is " + ex.Message);
             }
             return userID;
@@ -80,8 +96,9 @@ namespace Repository.Implementation
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@userIDFK", id, direction: ParameterDirection.Input);
                 objAdd = UnitOfWork.Connection.QueryFirstOrDefault<UserAddress>(usp_EditAddress, parameters, commandType: CommandType.StoredProcedure);
-                
-            }catch(Exception ex)
+
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine("Exception is " + ex.Message);
             }
@@ -134,16 +151,18 @@ namespace Repository.Implementation
         public List<Users> GetUsers()
         {
             List<Users> userList = null;
-            try {
+            try
+            {
                 const string usp_UserList = "usp_GetUsersList";
                 userList = UnitOfWork.Connection.Query<Users>(usp_UserList, commandType: CommandType.StoredProcedure).ToList();
                 //userList = UnitOfWork.Connection.Query<Users>(usp_UserList, commandType: CommandType.StoredProcedure).ToList();
-            }catch(Exception e)
+            }
+            catch (Exception e)
             {
                 Console.WriteLine("Exception is " + e.Message);
             }
             return userList;
-            
+
         }
 
         public void InsertMaster(UserModel user)
@@ -179,11 +198,13 @@ namespace Repository.Implementation
                 DynamicParameters parameters = new DynamicParameters();
                 parameters.Add("@cityName", userAd.city_name, direction: ParameterDirection.Input);
                 parameters.Add("@userIDFK", userAd.userID, direction: ParameterDirection.Input);
-                 addressId = UnitOfWork.Connection.ExecuteScalar<int>(usp_address,parameters, commandType: CommandType.StoredProcedure);
-            }catch(Exception ex) {
+                addressId = UnitOfWork.Connection.ExecuteScalar<int>(usp_address, parameters, commandType: CommandType.StoredProcedure);
+            }
+            catch (Exception ex)
+            {
 
                 Console.WriteLine("Your Exception is=> " + ex.Message);
-            
+
             }
             return addressId;
         }
@@ -247,7 +268,8 @@ namespace Repository.Implementation
                 parameters.Add("@userImage", user.user_ImagePath, direction: ParameterDirection.Input);
                 userID = UnitOfWork.Connection.ExecuteScalar<int>(usp_Insert, parameters, commandType: CommandType.StoredProcedure);
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 Console.WriteLine("Your Exception is=> " + ex.Message);
             }
             return userID;

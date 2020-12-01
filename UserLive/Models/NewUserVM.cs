@@ -8,23 +8,25 @@ namespace UserLive.Models
 {
     public class NewUserVM
     {
-        public int _userId { set; get; }
-        public string _userName { set; get; }
-        public string _userEmail { set; get; }
-        public string _userPwd { set; get; }
-        public string _userPhone { set; get; }
+        public int userId { set; get; }
+        public string userName { set; get; }
+        public string userEmail { set; get; }
+        public string userPwd { set; get; }
+        public string userPhone { set; get; }
+        public bool IsVerified { set; get; }
+
 
         //Country
-        public int _userCountry { set; get; }
-        public string _countryName { set; get; }
+        public int userCountry { set; get; }
+        public string countryName { set; get; }
 
         //Province
-        public int _userProvince { set; get; }
-        public string _provinceName { set; get; }
+        public int userProvince { set; get; }
+        public string provinceName { set; get; }
 
         //public int _uskillId { set; get; }
         //public string _uskillName { set; get; }
-        public string _uskillIds { set; get; }
+        public string uskillIds { set; get; }
         //img
         public string ImagePath { get; set; }
         public IFormFile _cover{ get; set; }

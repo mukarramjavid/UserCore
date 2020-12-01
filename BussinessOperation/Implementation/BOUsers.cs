@@ -63,6 +63,7 @@ namespace BussinessOperation.Implementation
         {
             List<UserModel> objUserList = new List<UserModel>();
             objUserList = _userService.GetMasterUsers();
+
             return objUserList;
         }
 

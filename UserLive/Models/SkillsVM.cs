@@ -7,7 +7,7 @@ namespace UserLive.Models
 {
     public class SkillsVM
     {
-        public int _skillId { set; get; }
-        public string _skillName { set; get; }
+        public int skillId { set; get; }
+        public string skillName { set; get; }
     }
 }

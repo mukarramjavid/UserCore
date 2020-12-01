@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj": {}
+    "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
+    "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj",
         "projectName": "Inferastructure",
-        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,11 +43,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Hosting.Abstractions": {
               "target": "Package",
-              "version": "[2.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[3.1.10, )"
+              "version": "[2.0.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -70,14 +66,14 @@
         }
       }
     },
-    "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj": {
+    "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -96,8 +92,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj"
               }
             }
           }

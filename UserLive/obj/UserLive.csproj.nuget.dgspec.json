@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Angular_Projects\\_coreUSer - Copy\\UserLive\\UserLive.csproj": {}
+    "E:\\Angular_Projects\\_coreUSerCopy\\UserLive\\UserLive.csproj": {}
   },
   "projects": {
-    "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj": {
+    "E:\\Angular_Projects\\_coreUSerCopy\\BussinessOperation\\BussinessOperation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSerCopy\\BussinessOperation\\BussinessOperation.csproj",
         "projectName": "BussinessOperation",
-        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\BussinessOperation\\BussinessOperation.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSerCopy\\BussinessOperation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,14 +30,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj"
               },
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj"
               },
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Services\\Services.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Services\\Services.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj": {
+    "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj",
         "projectName": "Components",
-        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSerCopy\\Components\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -98,8 +98,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
+    "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj",
         "projectName": "Inferastructure",
-        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -173,11 +173,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Hosting.Abstractions": {
               "target": "Package",
-              "version": "[2.0.0, )"
-            },
-            "Microsoft.Extensions.Configuration.Abstractions": {
-              "target": "Package",
-              "version": "[3.1.10, )"
+              "version": "[2.0.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
@@ -200,14 +196,14 @@
         }
       }
     },
-    "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj": {
+    "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -226,8 +222,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj"
               }
             }
           }
@@ -274,14 +270,14 @@
         }
       }
     },
-    "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj": {
+    "E:\\Angular_Projects\\_coreUSerCopy\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSerCopy\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSerCopy\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -300,14 +296,14 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj"
               },
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj"
               },
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj"
               }
             }
           }
@@ -342,14 +338,14 @@
         }
       }
     },
-    "E:\\Angular_Projects\\_coreUSer - Copy\\UserLive\\UserLive.csproj": {
+    "E:\\Angular_Projects\\_coreUSerCopy\\UserLive\\UserLive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Angular_Projects\\_coreUSer - Copy\\UserLive\\UserLive.csproj",
+        "projectUniqueName": "E:\\Angular_Projects\\_coreUSerCopy\\UserLive\\UserLive.csproj",
         "projectName": "UserLive",
-        "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\UserLive\\UserLive.csproj",
+        "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\UserLive\\UserLive.csproj",
         "packagesPath": "C:\\Users\\mukarram.javaid\\.nuget\\packages\\",
-        "outputPath": "E:\\Angular_Projects\\_coreUSer - Copy\\UserLive\\obj\\",
+        "outputPath": "E:\\Angular_Projects\\_coreUSerCopy\\UserLive\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -368,20 +364,20 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\BussinessOperation\\BussinessOperation.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\BussinessOperation\\BussinessOperation.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\BussinessOperation\\BussinessOperation.csproj"
               },
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Components\\Components.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Components\\Components.csproj"
               },
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Inferastructure\\Inferastructure.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Inferastructure\\Inferastructure.csproj"
               },
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Repository\\Repository.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Repository\\Repository.csproj"
               },
-              "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj": {
-                "projectPath": "E:\\Angular_Projects\\_coreUSer - Copy\\Services\\Services.csproj"
+              "E:\\Angular_Projects\\_coreUSerCopy\\Services\\Services.csproj": {
+                "projectPath": "E:\\Angular_Projects\\_coreUSerCopy\\Services\\Services.csproj"
               }
             }
           }
@@ -457,6 +453,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
+            },
+            "Quartz": {
+              "target": "Package",
+              "version": "[3.0.7, )"
             },
             "Twilio": {
               "target": "Package",

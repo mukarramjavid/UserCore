@@ -29,8 +29,8 @@ namespace UserLive.Controllers
             {
                 var cvm = new CountryVM()
                 {
-                    _countryId = item.countryId,
-                    _countryName = item.countryName
+                    countryId = item.countryId,
+                    countryName = item.countryName
                 };
                 objList.Add(cvm);
 
@@ -49,9 +49,9 @@ namespace UserLive.Controllers
             {
                 var pvm = new ProvinceVM()
                 {
-                    _countryId = item.countryId,
-                    _provinceId=item.provinceId,
-                    _provinceName=item.provinceName
+                    countryId = item.countryId,
+                    provinceId=item.provinceId,
+                    provinceName=item.provinceName
                 };
                 objList.Add(pvm);
 
@@ -69,8 +69,8 @@ namespace UserLive.Controllers
             {
                 var svm = new SkillsVM()
                 {
-                   _skillId=item.skillId,
-                   _skillName=item.skillName
+                   skillId=item.skillId,
+                   skillName=item.skillName
                 };
                 objList.Add(svm);
 

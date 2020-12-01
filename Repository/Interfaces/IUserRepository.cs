@@ -24,5 +24,6 @@ namespace Repository.Interfaces
         void DeleteMasterRecord(int id);
         UserModel GetUserMasterById(int id);
         int UpdateMasterUser(int id, UserModel user);
+        void AddDate(DateTime date);
     }
 }

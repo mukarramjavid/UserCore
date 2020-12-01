@@ -12,6 +12,7 @@ using Inferastructure.Mails;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Twilio;
@@ -20,6 +21,7 @@ using Twilio.Types;
 using UserLive.Models;
 using Vonage.Messaging;
 using Vonage.Request;
+
 
 namespace UserLive.Controllers
 {
@@ -30,18 +32,33 @@ namespace UserLive.Controllers
         private readonly IBOCountry _IBOCountry;
         private readonly IHostingEnvironment _HostEnvironment;
         private readonly MailSend _mail;
+        static int _PageNumber = 1;
+        private IMemoryCache _cache;
 
 
-        public NewUserController(IBOUsers IBOUsers, IBOCountry IBOCountry, IHostingEnvironment HostEnvironment, IConfiguration configuration)
+        public NewUserController(IBOUsers IBOUsers, IBOCountry IBOCountry, IHostingEnvironment HostEnvironment, IConfiguration configuration, IMemoryCache memoryCache)
         {
             _IBOUsers = IBOUsers;
             _IBOCountry = IBOCountry;
             _HostEnvironment = HostEnvironment;
             _config = configuration;
-            _mail = new MailSend(_HostEnvironment,_config);
+            _cache = memoryCache;
+            _mail = new MailSend(_HostEnvironment, _config);
         }
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult NewUsersList()
+        {
+            return View();
+        }
+        public IActionResult GetUsersOnScroll()
+        {
+            string cacheName = "userslist" + DateTime.Now.Date;
+            var list = _cache.Get<List<UserModel>>(cacheName);
+            _PageNumber = 1;
             return View();
         }
         public ActionResult InsertMaster()
@@ -58,12 +75,12 @@ namespace UserLive.Controllers
             {
                 var user = new UserModel
                 {
-                    userEmail = item._userEmail,
-                    userName = item._userName,
-                    userPhone = item._userPhone,
-                    userPwd = item._userPwd,
-                    countryId = item._userCountry,
-                    skillIds = item._uskillIds
+                    userEmail = item.userEmail,
+                    userName = item.userName,
+                    userPhone = item.userPhone,
+                    userPwd = item.userPwd,
+                    countryId = item.userCountry,
+                    skillIds = item.uskillIds
 
                 };
                 SendMail(user.userEmail, user.userPwd);
@@ -75,7 +92,54 @@ namespace UserLive.Controllers
             return RedirectToAction("InsertMaster");
         }
 
+        public JsonResult GetMasterUsersListsOnScroll()
+        {
+            List<NewUserVM> objList = new List<NewUserVM>();
+            List<UserModel> userModelList = new List<UserModel>();
+            string cacheName = "users-matches-" + DateTime.Now.Date.ToString("MM-dd-yyyy") + "-";
+            if (!_cache.TryGetValue(cacheName, out userModelList))
+            {
 
+                if (userModelList == null)
+                {
+                    userModelList = _IBOUsers.GetMasterUsers();
+                }
+
+                // cache memory
+                if (userModelList != null && userModelList.Count > 0)
+                {
+                    var cacheEntryOptions = new MemoryCacheEntryOptions().SetAbsoluteExpiration(DateTime.Now.AddMinutes(5));
+                    // Save data in cache.
+                    _cache.Set(cacheName, userModelList, cacheEntryOptions);
+                }
+
+            }
+            userModelList.ForEach(item =>
+            {
+                NewUserVM uvm = new NewUserVM
+                {
+                    userName = item.userName,
+                    userEmail = item.userEmail,
+                    userPhone = item.userPhone,
+                    userPwd = item.userPwd,
+                    userId = item.userId,
+                    countryName = item.countryName,
+                    provinceName = item.provinceName,
+                    IsVerified = item.IsVerified
+                };
+                objList.Add(uvm);
+            });
+            objList = objList.Skip((_PageNumber - 1) * 10).Take(10).ToList();
+            _PageNumber++;
+
+            //if (objList == null)
+            //{
+            //    _PageNumber = 1;
+
+            //}
+            //var obj = objList;
+            return Json(objList, new JsonSerializerSettings());
+        }
         public JsonResult GetMasterUsersLists()
         {
             //var sa = new JsonSerializerSettings();
@@ -85,20 +149,21 @@ namespace UserLive.Controllers
             {
                 NewUserVM uvm = new NewUserVM
                 {
-                    _userName = item.userName,
-                    _userEmail = item.userEmail,
-                    _userPhone = item.userPhone,
-                    _userPwd = item.userPwd,
-                    _userId = item.userId,
-                    _countryName = item.countryName,
-                    _provinceName = item.provinceName
-
+                    userName = item.userName,
+                    userEmail = item.userEmail,
+                    userPhone = item.userPhone,
+                    userPwd = item.userPwd,
+                    userId = item.userId,
+                    countryName = item.countryName,
+                    provinceName = item.provinceName,
+                    IsVerified = item.IsVerified
                 };
 
                 objList.Add(uvm);
 
 
             }
+
             //var obj = objList;
             return Json(objList, new JsonSerializerSettings());
         }
@@ -118,18 +183,18 @@ namespace UserLive.Controllers
 
             var uvm = new NewUserVM()
             {
-                _userId = rcrd.userId,
-                _userName = rcrd.userName,
-                _userEmail = rcrd.userEmail,
-                _userPwd = rcrd.userPwd,
-                _userPhone = rcrd.userPhone,
-                _userCountry = rcrd.countryId,
-                _countryName = (from name in countryList
-                                where name.countryId == rcrd.countryId
-                                select name.countryName
+                userId = rcrd.userId,
+                userName = rcrd.userName,
+                userEmail = rcrd.userEmail,
+                userPwd = rcrd.userPwd,
+                userPhone = rcrd.userPhone,
+                userCountry = rcrd.countryId,
+                countryName = (from name in countryList
+                               where name.countryId == rcrd.countryId
+                               select name.countryName
                                 ).FirstOrDefault(),
-                _uskillIds = rcrd.skillIds,
-               
+                uskillIds = rcrd.skillIds,
+
 
 
 
@@ -143,11 +208,11 @@ namespace UserLive.Controllers
             var user = new UserModel()
             {
                 userId = id,
-                userEmail = uvm._userEmail,
-                userName = uvm._userName,
-                userPhone = uvm._userPhone,
-                userPwd = uvm._userPwd,
-                countryId = uvm._userCountry
+                userEmail = uvm.userEmail,
+                userName = uvm.userName,
+                userPhone = uvm.userPhone,
+                userPwd = uvm.userPwd,
+                countryId = uvm.userCountry
             };
             int rcrd = _IBOUsers.UpdateMasterUser(id, user);
 
@@ -206,7 +271,7 @@ namespace UserLive.Controllers
 
             return body;
         }
-        public void SendSMS(string phone,string name)
+        public void SendSMS(string phone, string name)
         {
             string text = $"Hello {name} !! Welcome !!";
             try
@@ -248,4 +313,3 @@ namespace UserLive.Controllers
 
     }
 }
-

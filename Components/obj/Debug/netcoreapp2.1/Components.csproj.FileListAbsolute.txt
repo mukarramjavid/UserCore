@@ -34,3 +34,15 @@ E:\Angular_Projects\_coreUSer - Copy\Components\obj\Debug\netcoreapp2.1\Componen
 E:\Angular_Projects\_coreUSer - Copy\Components\obj\Debug\netcoreapp2.1\Components.csproj.CopyComplete
 E:\Angular_Projects\_coreUSer - Copy\Components\obj\Debug\netcoreapp2.1\Components.dll
 E:\Angular_Projects\_coreUSer - Copy\Components\obj\Debug\netcoreapp2.1\Components.pdb
+E:\Angular_Projects\_coreUSerCopy\Components\bin\Debug\netcoreapp2.1\Components.deps.json
+E:\Angular_Projects\_coreUSerCopy\Components\bin\Debug\netcoreapp2.1\Components.dll
+E:\Angular_Projects\_coreUSerCopy\Components\bin\Debug\netcoreapp2.1\Components.pdb
+E:\Angular_Projects\_coreUSerCopy\Components\bin\Debug\netcoreapp2.1\Inferastructure.dll
+E:\Angular_Projects\_coreUSerCopy\Components\bin\Debug\netcoreapp2.1\Inferastructure.pdb
+E:\Angular_Projects\_coreUSerCopy\Components\obj\Debug\netcoreapp2.1\Components.csprojAssemblyReference.cache
+E:\Angular_Projects\_coreUSerCopy\Components\obj\Debug\netcoreapp2.1\Components.AssemblyInfoInputs.cache
+E:\Angular_Projects\_coreUSerCopy\Components\obj\Debug\netcoreapp2.1\Components.AssemblyInfo.cs
+E:\Angular_Projects\_coreUSerCopy\Components\obj\Debug\netcoreapp2.1\Components.csproj.CoreCompileInputs.cache
+E:\Angular_Projects\_coreUSerCopy\Components\obj\Debug\netcoreapp2.1\Components.csproj.CopyComplete
+E:\Angular_Projects\_coreUSerCopy\Components\obj\Debug\netcoreapp2.1\Components.dll
+E:\Angular_Projects\_coreUSerCopy\Components\obj\Debug\netcoreapp2.1\Components.pdb

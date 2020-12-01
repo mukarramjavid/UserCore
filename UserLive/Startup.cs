@@ -12,16 +12,20 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 using Repository.Implementation;
 using Repository.Interfaces;
 using Repository.Providers;
 using Services.Implementation;
 using Services.Interfaces;
 using UserLive.Db;
+using UserLive.Hubs;
+using UserLive.Jobs;
 
 namespace UserLive
 {
@@ -33,7 +37,7 @@ namespace UserLive
         }
 
         public IConfiguration Configuration { get; }
-
+        public static IHubContext<LiveUpdateHub> mMyHubContext;
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -52,16 +56,28 @@ namespace UserLive
             services.AddHttpContextAccessor();
             services.AddRouting();
             services.AddDetection();
-            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             //add CORS
             services.AddCors(c =>
             {
                 c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
             });
+            this._RegisterApplicationServices(services);
             this._RegisterRepositories(services);
             this._RegisterServices(services);
             this._RegisterBusinessOperations(services);
+
+            // SignalR Library
+            services.AddSignalR().AddJsonProtocol(options =>
+            {
+                options.PayloadSerializerSettings.ContractResolver = new DefaultContractResolver();
+            });
+
+
+            ServiceProvider serviceProvider = services.BuildServiceProvider();
+            IBackgroundJobService backgroundJobService = serviceProvider.GetService<IBackgroundJobService>();
+            backgroundJobService.ScheduleAutoSignalR();
 
         }
 
@@ -80,6 +96,13 @@ namespace UserLive
 
             app.UseStaticFiles();
             app.UseCookiePolicy();
+
+            app.UseSignalR(endpoints =>
+            {
+                endpoints.MapHub<LiveUpdateHub>("/liveupdatehub");
+            });
+
+            mMyHubContext = app.ApplicationServices.GetService<IHubContext<LiveUpdateHub>>();
 
             app.UseMvc(routes =>
             {
@@ -101,6 +124,8 @@ namespace UserLive
             services.AddScoped<IConnectionFactory, ConnectionFactory>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICountryRepository, CountryRepository>();
+
+
         }
         private void _RegisterServices(IServiceCollection services)
         {
@@ -112,7 +137,14 @@ namespace UserLive
             services.AddScoped<IBOUsers, BOUsers>();
             services.AddScoped<IBOCountry, BOCountry>();
         }
+        
+        private void _RegisterApplicationServices(IServiceCollection services)
+        {
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+            services.AddScoped<IBackgroundJobService, BackgroundJobService>();
+            services.AddTransient<ScheduledJob>();
+        }
 
-       
+
     }
 }

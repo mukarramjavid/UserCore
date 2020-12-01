@@ -24,5 +24,6 @@ namespace Services.Interfaces
         void DeleteMasterRecord(int id);
         UserModel GetMasterById(int id);
         int UpdateMasterUser(int id, UserModel user);
+        void AddDate(DateTime date);
     }
 }

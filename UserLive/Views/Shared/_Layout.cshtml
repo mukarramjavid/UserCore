@@ -6,8 +6,11 @@
     <title>@ViewData["Title"] - UserLive</title>
 
     <environment include="Development">
+        @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">*@
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="~/css/site.css" />
+
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -30,12 +33,15 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li id="_home"><a asp-area=""  asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li id="_home"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li id="_about"><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li id="_contact"><a asp-area=""id="_contact" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                    <li  id="_userlist"><a asp-area="" id="_userlist" asp-controller="Home" asp-action="UsersList">Users List</a></li>
-                    <li><a asp-area=""asp-controller="jQueryCRUD" asp-action="UsersList" id="btnLoad" >Users List 2</a></li>
-                    <li><a asp-area="" id="_insertmaster"asp-controller="NewUser" asp-action="InsertMaster">InsertMaster</a></li>
+                    <li id="_contact"><a asp-area="" id="_contact" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li id="_userlist"><a asp-area="" id="_userlist" asp-controller="Home" asp-action="UsersList">Users List</a></li>
+                    <li><a asp-area="" asp-controller="jQueryCRUD" asp-action="UsersList" id="btnLoad">Users List 2</a></li>
+                    <li><a asp-area="" id="_insertmaster" asp-controller="NewUser" asp-action="InsertMaster">InsertMaster</a></li>
+                    <li><a asp-area="" asp-controller="NewUser" asp-action="NewUsersList">Users</a></li>
+                    <li><a asp-area="" asp-controller="NewUser" asp-action="GetUsersOnScroll">User On Scroll</a></li>
+                    
                 </ul>
             </div>
         </div>
@@ -46,7 +52,7 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
+        <footer class="footer_area">
             <p>&copy; 2020 - UserLive</p>
         </footer>
     </div>

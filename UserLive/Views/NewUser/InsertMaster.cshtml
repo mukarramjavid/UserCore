@@ -298,7 +298,7 @@
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <form id="formData" enctype="multipart/form-data">
+                <form id="_formData" enctype="multipart/form-data">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">User Detail</h4>
@@ -511,7 +511,7 @@
                 //for filter the array values on the basis of FK
                 updated_dropdown = $.map(result, function (val, key) {
                     //console.log("In Map (result)=> ", result)
-                    if (val._countryId == userDropDownVal) {
+                    if (val.countryId == userDropDownVal) {
                         return val;
                     }
                     //console.log("val=> ", val)
@@ -519,7 +519,7 @@
 
 
                 for (var i = 0; i < updated_dropdown.length; i++) {
-                    dropdown += '<option value="' + updated_dropdown[i]._provinceId + '">' + updated_dropdown[i]._provinceName + '</option>';
+                    dropdown += '<option value="' + updated_dropdown[i].provinceId + '">' + updated_dropdown[i].provinceName + '</option>';
                 }
                 $("#provinceList,#proListEdit").html(dropdown)
                 console.log("ProvinceListVal(Country)=> ", userDropDownVal)
@@ -542,7 +542,7 @@
 
                 var dropdown = '<option value="-1">Please Select Country</option>';
                 for (var i = 0; i < result.length; i++) {
-                    dropdown += '<option value="' + result[i]._countryId + '">' + result[i]._countryName + '</option>';
+                    dropdown += '<option value="' + result[i].countryId + '">' + result[i].countryName + '</option>';
                 }
                 $("#countryList,#countryListEdit").html(dropdown)
                 $("#countryList,#countryListEdit").change(function () {
@@ -567,11 +567,11 @@
             contentType: "application/json;charset=utf-8",
             dataType: "json",
             success: function (result) {
-                //console.log("Check Boxes=> ", result)
+                console.log("Check Boxes=> ", result)
 
                 var checkbox = '';
                 for (var i = 0; i < result.length; i++) {
-                    checkbox += '<label class="control-label check">' + result[i]._skillName + '<input class="form-control" type="checkbox" id="' + result[i]._skillId + '" value="' + result[i]._skillId + '" />' + '</label>&nbsp;';
+                    checkbox += '<label class="control-label check">' + result[i].skillName + '<input class="form-control" type="checkbox" id="' + result[i].skillId + '" value="' + result[i].skillId + '" />' + '</label>&nbsp;';
                 }
 
 
@@ -599,13 +599,13 @@
                     //console.log("Item=> ",item)
                     html += '<tr>';
                     //html += '<td>' + item._userId + '</td>';
-                    html += '<td>' + item._userName + '</td>';
-                    html += '<td>' + item._userEmail + '</td>';
-                    html += '<td>' + item._userPhone + '</td>';
-                    html += '<td>' + item._userPwd + '</td>';
-                    html += '<td>' + item._countryName + '</td>';
-                    html += '<td>' + item._provinceName + '</td>';
-                    html += '<td><a href="#" onclick="RcrdGetbyID(' + item._userId + ')">Edit</a> | <a href="/NewUser/InsertMaster" onclick="DeleleRecord(' + item._userId + ')">Delete</a></td>';
+                    html += '<td>' + item.userName + '</td>';
+                    html += '<td>' + item.userEmail + '</td>';
+                    html += '<td>' + item.userPhone + '</td>';
+                    html += '<td>' + item.userPwd + '</td>';
+                    html += '<td>' + item.countryName + '</td>';
+                    html += '<td>' + item.provinceName + '</td>';
+                    html += '<td><a href="#" onclick="RcrdGetbyID(' + item.userId + ')">Edit</a> | <a href="/NewUser/InsertMaster" onclick="DeleleRecord(' + item.userId + ')">Delete</a></td>';
                     html += '</tr>';
                 });
                 $('#tMasterbody').html(html);
@@ -646,17 +646,17 @@
             processData: false,
             success: function (result) {
                 console.log("Edit Result=> ", result)
-                console.log("User id=> ", result._userId)
-                $("#_userId").val(result._userId);
-                $("#_uname").val(result._userName);
-                $("#_email").val(result._userEmail);
-                $("#_pwd").val(result._userPwd);
-                $("#_phone").val(result._userPhone);
-                var countryId = parseInt(result._userCountry)
+                console.log("User id=> ", result.userId)
+                $("#_userId").val(result.userId);
+                $("#_uname").val(result.userName);
+                $("#_email").val(result.userEmail);
+                $("#_pwd").val(result.userPwd);
+                $("#_phone").val(result.userPhone);
+                var countryId = parseInt(result.userCountry)
                 //var provinceId = parseInt(result._userProvince)
 
                 //map saved chkBoxes values
-                var editchecklist = JSON.parse(result._uskillIds)
+                var editchecklist = JSON.parse(result.uskillIds)
                 console.log("Chl Lst=> ",editchecklist)
                 for (var i = 0; i < editchecklist.length; i++) {
                     $("#checkboxeslistEdit input[value=" + editchecklist[i] + "]").attr("checked", true).val(editchecklist[i]);
@@ -696,12 +696,12 @@
         console.log("UserId=> " + uid)
 
         var data = new FormData;
-        data.append("_userName", uname)
-        data.append("_userPwd", pwd)
-        data.append("_userEmail", email)
-        data.append("_userPhone", phone)
-        data.append("_userId", uid)
-        data.append("_userCountry", userDropDownVal)
+        data.append("userName", uname)
+        data.append("userPwd", pwd)
+        data.append("userEmail", email)
+        data.append("userPhone", phone)
+        data.append("userId", uid)
+        data.append("userCountry", userDropDownVal)
 
 
         //console.log("After CLicking=> ", data.userId)
@@ -760,7 +760,7 @@
         html += '<td id="userEmail">' + email + '</td>';
         html += '<td id="userPwd">' + pwd + '</td>';
         html += '<td id="userPhone">' + phone + '</td>';
-        html += '<td id="_userDropDown">' + userDropDown + '</td>';
+        html += '<td id="userDropDown">' + userDropDown + '</td>';
         html += '</tr>';
 
         $('.tbody').append(html);
@@ -774,18 +774,18 @@
 
         $('.tbody').each(function () {
             let pushedData = {}
-            pushedData._userName = uname
-            pushedData._userEmail = email
-            pushedData._userPwd = pwd
-            pushedData._userPhone = phone
-            pushedData._userCountry = userDropDownVal
-            pushedData._countryName = userDropDown
-            pushedData._uskillIds = JSON.stringify(selected)
+            pushedData.userName = uname
+            pushedData.userEmail = email
+            pushedData.userPwd = pwd
+            pushedData.userPhone = phone
+            pushedData.userCountry = userDropDownVal
+            pushedData.countryName = userDropDown
+            pushedData.uskillIds = JSON.stringify(selected)
 
             //pushedData._userProvince = provinceDropDownVal
             //pushedData._provinceName = provinceDropDownText
 
-            console.log("Inside table => ", pushedData._userName + " | " + pushedData._userEmail + " | " + pushedData._userPwd + " | " + pushedData._userPhone + " | " + pushedData._userCountry + " | " + pushedData._countryName + " | " + pushedData._uskillIds )
+            console.log("Inside table => ", pushedData.userName + " | " + pushedData.userEmail + " | " + pushedData.userPwd + " | " + pushedData.userPhone + " | " + pushedData.userCountry + " | " + pushedData.countryName + " | " + pushedData.uskillIds )
             console.log("Pushed=> ", pushedData)
             _data.push(pushedData)
             swal("Data pushed in queue.")

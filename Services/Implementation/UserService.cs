@@ -154,5 +154,12 @@ namespace Services.Implementation
             _unitOfWork.Close();
             return local_id;
         }
+
+        public void AddDate(DateTime date)
+        {
+            _unitOfWork.Open();
+             _userRepository.AddDate(date);
+            _unitOfWork.Close();
+        }
     }
 }
